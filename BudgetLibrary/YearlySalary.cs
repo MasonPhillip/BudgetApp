@@ -27,9 +27,21 @@ namespace BudgetLibrary
             {
                 return Salary / 24;
             }
-            else
+            else if (frequency == PaymentPeriod.Biweekly)
+            {
+                return Salary / 26;
+            }
+            else if (frequency == PaymentPeriod.Weekly)
             {
                 return Salary / 52;
+            }
+            else if (frequency == PaymentPeriod.Monthly)
+            {
+                return Salary / 12;
+            }
+            else
+            {
+                throw new NotImplementedException();
             }
         }
     }

@@ -9,6 +9,9 @@ namespace BudgetLibraryTests
     public enum PaymentPeriod
     {
         Weekly,
-        Semimonthly
+        Biweekly,
+        Semimonthly,
+        Monthly
+
     }
 }
